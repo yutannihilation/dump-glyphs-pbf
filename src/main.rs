@@ -21,7 +21,10 @@ fn main() {
         for g in stack.glyphs.iter().take(10) {
             let w = g.width + 2 * BORDER;
             let h = g.height + 2 * BORDER;
-            println!("id: {} ({w} x {h})", g.id);
+            println!(
+"id: {} ({w}x{h}, left: {}, top: {}, advance: {})",
+g.id, g.left, g.top, g.advance
+);
             let Some(bitmap) = &g.bitmap else {
                 break;
             };
