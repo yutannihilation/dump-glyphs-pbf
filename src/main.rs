@@ -26,7 +26,7 @@ fn main() {
 g.id, g.left, g.top, g.advance
 );
             let Some(bitmap) = &g.bitmap else {
-                break;
+                continue;
             };
             let mut stdout = StandardStream::stdout(ColorChoice::Always);
             let mut color_spec = ColorSpec::new();
