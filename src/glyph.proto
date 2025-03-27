@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package mapbox.glyphs;
+
+message Glyph {
+    uint32 id = 1;
+    optional bytes bitmap = 2;
+    uint32 width = 3;
+    uint32 height = 4;
+    sint32 left = 5;
+    sint32 top = 6;
+    uint32 advance = 7;
+}
+
+message Fontstack {
+    string name = 1;
+    string range = 2;
+    repeated Glyph glyphs = 3;
+}
+
+message GlyphSet {
+    repeated Fontstack stacks = 1;
+}

@@ -1,0 +1,12 @@
+[package]
+name = "dump-glyphs-pbf"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+prost = "0.13"
+prost-types = "0.13"
+termcolor = "1.4"
+
+[build-dependencies]
+prost-build = "0.13"
