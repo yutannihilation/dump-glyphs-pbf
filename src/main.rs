@@ -18,7 +18,7 @@ fn main() {
         println!("name: {}", stack.name);
         println!("range: {}", stack.range);
 
-        for g in stack.glyphs.iter().take(10) {
+        for g in stack.glyphs.iter() {
             let w = g.width + 2 * BORDER;
             let h = g.height + 2 * BORDER;
             println!(
