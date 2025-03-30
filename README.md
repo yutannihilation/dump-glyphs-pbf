@@ -6,3 +6,5 @@ Most of the code is from [maplibre/maplibre-gl-js](https://github.com/maplibre/m
 ```bash
 ./dump-glyphs-pbf /path/to/data.pbf
 ```
+
+![](/image.png)
